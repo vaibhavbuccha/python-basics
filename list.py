@@ -1,49 +1,55 @@
-"""___________________________________________________________________________________________
-|                                                                                             |
-|      program to print list                                                                  |                                                               
-|_____________________________________________________________________________________________|
-"""
+a = [67,78,90,56]
+print (a)
 
-#A list is a collection which is ordered and changeable. In Python lists are written with square brackets.
+b = [7,3,4,5]
+print (a+b)
+print (a == b)
+print (a != b)
+print (a[0]+b[0])
+print (a[0]-b[0])
+print (a[0]*b[0])
+print (a[0]/b[0])
+print (a[0]//b[0])
+print (a[0]**b[0])
 
-thislist =["vaibhav","aman","ankit"]
-print (thislist)
+a = [7,32,4,5]
+print (a)
+print (a[1:3] + b[1:3])
+print (a[-1])
 
+names= ['vaibhav','aman','ankit']
+print (names)
 
-#Change the second item:
-thislist =["vaibhav","aman","ankit"]
-thislist[1] = "kartik"
-print(thislist)
+value = [9.5,'vaibhav',21]
+print (value)
 
-thislist = list(("vaibhav","aman","ankit"))
-print (thislist)
+mil = [names , a,b]
+print(mil)
 
-# .append is used for adding in list
-thislist = list(("vaibhav","aman","ankit"))
-thislist.append("naman")
-print (thislist)
+a.append(45)
+print (a)
 
-# .remove is use for removing 
-thislist = list(("vaibhav","aman","ankit"))
-thislist.remove("ankit")
-print (thislist)
+a.insert(2,77)
+print(a)
 
-#length of the string
-thislist =["vaibhav","aman","ankit"]
-print (len(thislist))
+a.remove(5)
+print(a)
 
+a.pop(1)
+print(a)
 
-"""_____________________________________________________________________________
-|    Method 	Description
-|    append()	Adds an element at the end of the list
-|    clear()	Removes all the elements from the list
-|   copy()	Returns a copy of the list
-|    count()	Returns the number of elements with the specified value
-|    extend()	Add the elements of a list (or any iterable), to the end of the current list
-|    index()	Returns the index of the first element with the specified value
-|   insert()	Adds an element at the specified position
-|    pop()	Removes the element at the specified position
-|    remove()	Removes the first item with the specified value
-|    reverse()	Reverses the order of the list
-|    sort()	Sorts the list
-|_________________________________________________________________________________"""
+a.pop()
+print(a)
+
+del a [1:]
+print(a)
+
+a.extend([56,78,90])
+print(a)
+
+print(min(a))
+print(max(a))
+print(sum(a))
+
+a.sort()
+print(a)
